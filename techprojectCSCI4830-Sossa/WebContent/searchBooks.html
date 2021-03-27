@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+nav {
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>Search Book</h1>
+	</header>
+
+	<nav>
+		<a href="/techprojectCSCI4830-Sossa/insertBook.html">Insert Book</a> <br>
+	</nav>
+
+	<section>
+		<form action="SearchBookServlet" method="POST" class="form-inline">
+			<label for="authorName" class="sr-only">Author Name</label>
+			
+			<div class="form-group">
+				 
+				<input type="text" class="form-control mb-2 mr-sm-2" name="keyword" placeholder="Enter author's name">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+	</section>
+
+	<footer> Copyright </footer>
+</body>
+</html>

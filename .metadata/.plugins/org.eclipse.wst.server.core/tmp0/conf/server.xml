@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="F:\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\techproject4830-Sossa" path="/techproject4830-Sossa" reloadable="true" source="org.eclipse.jst.jee.server:techproject4830-Sossa"/></Host>
+      <Context docBase="C:\Users\WINDS\OneDrive - University of Nebraska at Omaha\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\WINDS\OneDrive - University of Nebraska at Omaha\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\techprojectCSCI4830-Sossa" path="/techprojectCSCI4830-Sossa" reloadable="true" source="org.eclipse.jst.jee.server:techprojectCSCI4830-Sossa"/></Host>
     </Engine>
   </Service>
 </Server>

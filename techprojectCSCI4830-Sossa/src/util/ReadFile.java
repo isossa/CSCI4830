@@ -40,7 +40,7 @@ public class ReadFile
 	{
 		List<String> contents = new ArrayList<String>();
 		File file = new File(filePath);
-		try(Scanner scanner = new Scanner(file))
+		try(Scanner scanner = new Scanner(file, "UTF-8"))
 		{
 			while (scanner.hasNextLine())
 			{

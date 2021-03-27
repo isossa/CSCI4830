@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+header {
+	background-color: rgb(8, 8, 8);
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+nav {
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>Insert Book</h1>
+	</header>
+
+	<nav>
+		<a href="/techprojectCSCI4830-Sossa/searchBooks.html">Search Books</a>
+	</nav>
+
+	<section>
+
+		<form action="InsertBookServlet" method="POST">
+			<div class="form-group">
+				<label for="authorAverageRating">Author Average Rating</label>
+				<input type="text" class="form-control" name="averageRating" placeholder="Enter author's average rating">
+			</div>
+			<div class="form-group">	
+				<label for="authorGender">Gender</label>
+				<input type="text" class="form-control" name="gender" placeholder="Enter author's gender">
+			</div>
+			<div class="form-group">	
+				<label for="authorName">Name</label>
+				<input type="text" class="form-control" name="name" placeholder="Enter author's name">
+			</div>
+			<div class="form-group">	
+				<label for="authorBirthPlace">Birthplace</label>
+				<input type="text" class="form-control" name="birthplace" placeholder="Enter author's birthplace">
+			</div>
+			<div class="form-group">	
+				<label for="bookTitle">Book Title</label>
+				<input type="text" class="form-control" name="bookTitle" placeholder="Enter book's title">
+			</div>
+			<div class="form-group">	
+				<label for="bookGenre">Genre</label>
+				<input type="text" class="form-control" name="genre" placeholder="Enter book's genre">
+			</div>
+			
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
+
+	<footer> Copyright </footer>
+</body>
+</html>

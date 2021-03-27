@@ -1,8 +1,5 @@
 package datamodel;
 
-import java.util.List;
-import java.util.Set;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,13 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * @since J2SE-1.8 CREATE TABLE BookTable ( id INT NOT NULL AUTO_INCREMENT,
- *        first_name VARCHAR(30) NOT NULL, last_name VARCHAR(30) NOT NULL, phone
- *        VARCHAR(30) NOT NULL, email VARCHAR(30) NOT NULL, PRIMARY KEY (id));
- */
 @Entity
-@Table(name = "BookTable")
+@Table(name = "Books")
 public class BookEntry
 {
 	@Id
@@ -24,186 +16,106 @@ public class BookEntry
 	@Column(name = "id")
 	private Integer id;
 
-	@Column(name = "average_rating")
-	private Double averageRating;
+	@Column(name = "author_average_rating")
+	private String authorAverageRating;
 	
-	@Column(name = "url")
-	private String url;
+	@Column(name = "author_gender")
+	private String authorGender;
 	
-	@Column(name = "title")
-	private String title;
+	@Column(name = "author_name")
+	private String authorName;
+	
+	@Column(name = "birthplace")
+	private String birthplace;
+	
+	@Column(name = "book_title")
+	private String bookTitle;
 	
 	@Column(name = "genre")
-	private Set<Genre> genres;
-	
-	@Column(name = "publication_year")
-	private Integer publicationYear;
-	
-	@Column(name = "number_of_rating")
-	private Integer numberOfRating;
-	
-	@Column(name = "number_of_review")
-	private Integer numberOfReview;
-	
-	@Column(name = "number_of_pages")
-	private Integer numberOfPages;
-	
-	@Column(name = "score")
-	private Integer score;
-	
-	@Column(name = "author")
-	private Author author;
-	
-	@Column(name = "book_rating_count")
-	private Integer ratingCount;
-	
-	@Column(name = "book_review_count")
-	private Integer reviewCount;
-	
-	public BookEntry() 
-	{	}
+	private String genre;
 
+	public BookEntry() {
+	}
 	
-	public BookEntry(Integer id, String title, Integer publicationYear, Integer score, Author author)
-	{
+	public BookEntry(Integer id, String authorAverageRating, String authorGender, String authorName, String birthplace,
+			String bookTitle, String genre) {
+		this(authorAverageRating, authorGender, authorName, birthplace, bookTitle, genre);
 		this.id = id;
-		this.title = title;
-		this.publicationYear = publicationYear;
-		this.score = score;
-		this.author = author;
+	}
+	
+	public BookEntry(String authorAverageRating, String authorGender, String authorName, String birthplace,
+			String bookTitle, String genre) {
+		this.authorAverageRating = authorAverageRating;
+		this.authorGender = authorGender;
+		this.authorName = authorName;
+		this.birthplace = birthplace;
+		this.bookTitle = bookTitle;
+		this.genre = genre;
 	}
 
-
-	public Integer getId()
-	{
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Integer id)
-	{
+	public String getAuthor_average_rating() {
+		return authorAverageRating;
+	}
+
+	public String getAuthorGender() {
+		return authorGender;
+	}
+
+	public String getAuthorName() {
+		return authorName;
+	}
+
+	public String getBirthplace() {
+		return birthplace;
+	}
+
+	public String getBookTitle() {
+		return bookTitle;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public Double getAverageRating()
-	{
-		return averageRating;
-	}
-
-	public void setAverageRating(Double averageRating)
-	{
-		this.averageRating = averageRating;
-	}
-
-	public String getUrl()
-	{
-		return url;
-	}
-
-	public void setUrl(String url)
-	{
-		this.url = url;
-	}
-
-	public String getTitle()
-	{
-		return title;
-	}
-
-	public void setTitle(String title)
-	{
-		this.title = title;
-	}
-
-	public Set<Genre> getGenres()
-	{
-		return genres;
-	}
-
-	public void setGenres(List<Genre> genres)
-	{
-		for (Genre genre : genres)
-		{
-			this.genres.add(genre);
-		}
-	}
-
-	public Integer getPublicationYear()
-	{
-		return publicationYear;
-	}
-
-	public void setPublicationYear(Integer publicationYear)
-	{
-		this.publicationYear = publicationYear;
-	}
-
-	public Integer getNumberOfRating()
-	{
-		return numberOfRating;
-	}
-
-	public void setNumberOfRating(Integer numberOfRating)
-	{
-		this.numberOfRating = numberOfRating;
-	}
-
-	public Integer getNumberOfReview()
-	{
-		return numberOfReview;
-	}
-
-	public void setNumberOfReview(Integer numberOfReview)
-	{
-		this.numberOfReview = numberOfReview;
-	}
-
-	public Integer getNumberOfPages()
-	{
-		return numberOfPages;
-	}
-
-	public void setNumberOfPages(Integer numberOfPages)
-	{
-		this.numberOfPages = numberOfPages;
-	}
-
-	public Integer getScore()
-	{
-		return score;
-	}
-
-	public void setScore(Integer score)
-	{
-		this.score = score;
+	public void setAuthor_average_rating(String author_average_rating) {
+		this.authorAverageRating = author_average_rating;
 	}
 	
-	public Author getAuthor()
-	{
-		return author;
+	public void setAuthorGender(String authorGender) {
+		this.authorGender = authorGender;
 	}
 
-	public void setAuthor(Author author)
-	{
-		this.author = author;
-	}
-	
-	public int getReviewCount()
-	{
-		return reviewCount;
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
 	}
 
-	public void setReviewCount(int reviewCount)
-	{
-		this.reviewCount = reviewCount;
-	}
-	
-	public int getRatingCount()
-	{
-		return ratingCount;
+	public void setBirthplace(String birthplace) {
+		this.birthplace = birthplace;
 	}
 
-	public void setRatingCount(int ratingCount)
-	{
-		this.ratingCount = ratingCount;
+	public void setBookTitle(String bookTitle) {
+		this.bookTitle = bookTitle;
 	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+
+	@Override
+	public String toString() {
+		return id + ", authorAverageRating=" + authorAverageRating + ", authorGender=" + authorGender
+				+ ", authorName=" + authorName + ", birthplace=" + birthplace + ", bookTitle=" + bookTitle + ", genre="
+				+ genre;
+	}
+
+
 }

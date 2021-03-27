@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\WINDS\OneDrive - University of Nebraska at Omaha\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\techproject4830-Sossa"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="techproject4830_Sossa.BookRecommender"/>
 			<item value="techproject4830_Sossa.techproject4830_Sossa"/>
 			<item value="techproject4830_Sossa.tech_project"/>
 			<item value="tech_project.tech_project"/>
@@ -34,6 +36,7 @@
 			<item value="tech-project"/>
 		</list>
 		<list key="artifactId">
+			<item value="BookRecommender"/>
 			<item value="techproject4830-Sossa"/>
 			<item value="tech-project"/>
 		</list>
@@ -69,7 +72,34 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\WINDS\OneDrive - University of Nebraska at Omaha\PC_Documents\UNO Spring 2021\Software Engineering\AWS Instance\workspaceCSCI4830-techproject-Sossa\BookRecommender"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="838"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
 	</section>
 </section>
